@@ -1,5 +1,4 @@
-# PHP-IMAGE-UPLOAD-Tools
-
+# PHP-IMAGE-UPLOAD-TOOLS
 ##A Library To Make Uploading And Validating Images Easier.
 ##By Conor Howland 26/05/2017
 ##

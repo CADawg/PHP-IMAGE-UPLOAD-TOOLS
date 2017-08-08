@@ -1,6 +1,7 @@
 # PHP-IMAGE-UPLOAD-TOOLS
 ## A Library To Make Uploading And Validating Images Easier.
 **By Conor Howland 26/05/2017**
+**Note: DEV branch is much better, and I recconmend using it, it is pretty stable**
 *Last Updated 08/08/17* 
 
 ### Resizing Images

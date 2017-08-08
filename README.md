@@ -33,15 +33,11 @@ img_resize($target,$newcopy,$w,$h)
 
 #### Variables:
 
-*origloc - File To Create All Sizes From, Should Contain "Orig" in the filename as that will be changed to image width / height
-i.e: JohnSmith_234532469643_orig.png ->*
+*origloc - File To Create All Sizes From, Should Contain "Orig" in the filename as that will be changed to image width / height*
+i.e: JohnSmith_234532469643_orig.png ->
 					* JohnSmith_234532469643_256.png (256x256)
 					* JohnSmith_234532469643_128.png (128x128)
 					* JohnSmith_234532469643_64.png (64x64)
 **Note: Its good to have a wide array of images so that you can save download time on pages where images are smaller.**
 *This Function Creates 256x256,128x128,64x64 as well as leaving the original.*
 *Small One: Friends List, My Account Button. Large: Profile Page. Medium: Group Members.*
-
-Happy Coding
-
-~Conor~

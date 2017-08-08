@@ -3,17 +3,19 @@
 **By Conor Howland 26/05/2017**
 *Last Updated 08/08/17* 
 
-### Resizing Images
-img_resize($target,$newcopy,$w,$h)
+## img_resize($target,$newcopy,$w,$h)
 
 **Variables:**
 
-*$target - Original Photo Url
-*$newcopy - Fully Qualified File Url To Move To
-*$w - Width Of Output File
-*$h - Height Of Output File
+*$target - Original Photo Url*
 
-##isImageWithUpload($user,$target,$ts,$uploadedTo)
+*$newcopy - Fully Qualified File Url To Move To*
+
+*$w - Width Of Output File*
+
+*$h - Height Of Output File*
+
+## isImageWithUpload($user,$target,$ts,$uploadedTo)
 
 ### Variables:
 
@@ -47,10 +49,10 @@ Param No - Type - Means - Displays
 	<input type="submit" value="Upload Image" name="submit"><br><br>
 	<span style="background-color: lightgray; border: 5px solid lightgrey; border-radius: 5px;"><b> By Uploading An Image You Are 	Stating That You Have Full Ownership / Copy-</span><br><br><span style="background-color: lightgray; border: 5px solid lightgrey; border-radius: 5px;">rights For The Photo, and give permission for it to be displayed publically on site</b></span>
 
-### generateAllSizesOfImage($origloc,$replTxt)
+## generateAllSizesOfImage($origloc,$replTxt)
 
 
-#### Variables:
+### Variables:
 *$replTxt - Text To Replace W/ Filesize*
 
 *$origloc - File To Create All Sizes From, Should Contain "Orig" in the filename as that will be changed to image width / height*

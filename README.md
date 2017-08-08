@@ -1,7 +1,7 @@
 # PHP-IMAGE-UPLOAD-TOOLS
-##A Library To Make Uploading And Validating Images Easier.
-##By Conor Howland 26/05/2017
-##
+#A Library To Make Uploading And Validating Images Easier.
+#By Conor Howland 26/05/2017
+
 
 ##img_resize($target,$newcopy,$w,$h)
 

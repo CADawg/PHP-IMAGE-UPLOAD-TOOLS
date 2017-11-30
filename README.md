@@ -3,9 +3,6 @@
 **By Conor Howland 26/05/2017**
 *Last Updated 08/08/17* 
 
-[![Coverage Status](https://coveralls.io/repos/github/Snaddyvitch-Dispenser/PHP-IMAGE-UPLOAD-TOOLS/badge.svg?branch=dev)](https://coveralls.io/github/Snaddyvitch-Dispenser/PHP-IMAGE-UPLOAD-TOOLS?branch=dev)
-[![Build Status](https://travis-ci.org/Snaddyvitch-Dispenser/PHP-IMAGE-UPLOAD-TOOLS.svg?branch=dev)](https://travis-ci.org/Snaddyvitch-Dispenser/PHP-IMAGE-UPLOAD-TOOLS)
-
 ## img_resize($target,$newcopy,$w,$h)
 
 **Variables:**

@@ -1,5 +1,5 @@
 <?php
-function img_resize($target, $newcopy, $w, $h)
+function img_resize($target, $newCopy, $w, $h)
 {
     list($w_orig, $h_orig) = getimagesize($target);
     $scale_ratio = $w_orig / $h_orig;
@@ -19,21 +19,21 @@ function img_resize($target, $newcopy, $w, $h)
     }
     $tci = imagecreatetruecolor($w, $h);
     imagecopyresampled($tci, $img, 0, 0, 0, 0, $w, $h, $w_orig, $h_orig);
-    imagejpeg($tci, $newcopy, 84);
+    imagejpeg($tci, $newCopy, 84);
 }
 
 function isImageWithUpload($user, $target, $ts, $uploadedTo)
 {
     if ($ts) {
-        $tofile = $user . "_" . time() . "_orig";
+        $toFile = $user . "_" . time() . "_orig";
     } else {
-        $tofile = $user . "_orig";
+        $toFile = $user . "_orig";
     }
     if (!isset($uploadedTo)) {
         $uploadedTo = "fileToUpload";
     }
     $target_dir = $target;
-    $target_file = $target_dir . $tofile;
+    $target_file = $target_dir . $toFile;
     $imageFileType = pathinfo($_FILES[$uploadedTo]["name"], PATHINFO_EXTENSION);
     $totalImgDir = $target_file . "." . $imageFileType;
     // Check if image file is a actual image or fake image
@@ -52,20 +52,20 @@ function isImageWithUpload($user, $target, $ts, $uploadedTo)
             return array(false, "This File Is Not A Photo (Of type JPG, PNG or Gif).");
         }
     }
-    return array(false,"Generic Error");
+    return array(false, "Generic Error");
 }
 
-function generateAllSizesOfImage($origloc, $replTxt)
+function generateAllSizesOfImage($originalLocation, $replaceText)
 {
-    if (!isset($replTxt)) {
-        $replTxt = "orig";
-    } else if (strlen($replTxt) < 1) {
-        $replTxt = "orig";
+    if (!isset($replaceText)) {
+        $replaceText = "orig";
+    } else if (strlen($replaceText) < 1) {
+        $replaceText = "orig";
     }
-    $newhires = str_replace($replTxt, "256", $origloc);
-    img_resize($origloc, $newhires, 256, 256);
-    $newmidres = str_replace($replTxt, "128", $origloc);
-    $newlores = str_replace($replTxt, "64", $origloc);
-    img_resize($origloc, $newmidres, 128, 128);
-    img_resize($origloc, $newlores, 64, 64);
+    $newHighResolution = str_replace($replaceText, "256", $originalLocation);
+    $newMediumResolution = str_replace($replaceText, "128", $originalLocation);
+    $newLowResolution = str_replace($replaceText, "64", $originalLocation);
+    img_resize($originalLocation, $newHighResolution, 256, 256);
+    img_resize($originalLocation, $newMediumResolution, 128, 128);
+    img_resize($originalLocation, $newLowResolution, 64, 64);
 }

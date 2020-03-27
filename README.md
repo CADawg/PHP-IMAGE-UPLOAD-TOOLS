@@ -1,6 +1,6 @@
 # PHP-IMAGE-UPLOAD-TOOLS
 ## A Library To Make Uploading And Validating Images Easier.
-**By Conor Howland 26/05/2017**
+**By Conor 26/05/2017**
 *Last Updated 08/08/17* 
 
 ## img_resize($target,$newcopy,$w,$h)
@@ -46,8 +46,7 @@ Param No - Type - Means - Displays
 
 	<form action="tools.php" method="post" enctype="multipart/form-data">
 	<input type="file" name="fileToUpload" id="fileToUpload">
-	<input type="submit" value="Upload Image" name="submit"><br><br>
-	<span style="background-color: lightgray; border: 5px solid lightgrey; border-radius: 5px;"><b> By Uploading An Image You Are 	Stating That You Have Full Ownership / Copy-</span><br><br><span style="background-color: lightgray; border: 5px solid lightgrey; border-radius: 5px;">rights For The Photo, and give permission for it to be displayed publically on site</b></span>
+	<input type="submit" value="Upload Image" name="submit">
 
 ## generateAllSizesOfImage($origloc,$replTxt)
 
